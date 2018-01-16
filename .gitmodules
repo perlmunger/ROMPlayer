@@ -1,0 +1,3 @@
+[submodule "Libraries/AudioKit"]
+	path = Libraries/AudioKit
+	url = git@github.com:perlmunger/AudioKit.git

@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		14114AAB0957DB2FF3F0BAE6 /* Pods_RomPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4E3462380C85912B5B47237E /* Pods_RomPlayer.framework */; };
 		940FC29D1FDCD5CC00131899 /* PingPongDelay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 940FC29C1FDCD5CB00131899 /* PingPongDelay.swift */; };
 		943017941F23DE4600A302B2 /* Double+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9430178E1F23DE4600A302B2 /* Double+Extensions.swift */; };
 		9431F63C1F82CF11000A1718 /* PresetCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9431F63B1F82CF11000A1718 /* PresetCell.swift */; };
@@ -48,15 +47,66 @@
 		94C6CC2D1F840CFE0043BA5E /* ViewController+DisplayAlert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94C6CC2C1F840CFD0043BA5E /* ViewController+DisplayAlert.swift */; };
 		94C6CC2F1F840FD20043BA5E /* TopUIButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94C6CC2E1F840FD20043BA5E /* TopUIButton.swift */; };
 		94DC03591F9D634C006AFBDE /* PopUpMIDIController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94DC03581F9D634B006AFBDE /* PopUpMIDIController.swift */; };
+		B3A50BA0200DB60C007FA066 /* AudioKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B3A50B99200DB5EA007FA066 /* AudioKit.framework */; };
+		B3A50BA1200DB60C007FA066 /* AudioKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B3A50B99200DB5EA007FA066 /* AudioKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		B3A50BA4200DB60C007FA066 /* AudioKitUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B3A50B9B200DB5EA007FA066 /* AudioKitUI.framework */; };
+		B3A50BA5200DB60C007FA066 /* AudioKitUI.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B3A50B9B200DB5EA007FA066 /* AudioKitUI.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		B3A50B98200DB5EA007FA066 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B3A50B93200DB5EA007FA066 /* AudioKit For iOS.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = C42F35001C057E03000E937C;
+			remoteInfo = AudioKit;
+		};
+		B3A50B9A200DB5EA007FA066 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B3A50B93200DB5EA007FA066 /* AudioKit For iOS.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = EA7D07011F4E63C200707706;
+			remoteInfo = AudioKitUI;
+		};
+		B3A50B9C200DB5F9007FA066 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B3A50B93200DB5EA007FA066 /* AudioKit For iOS.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = C42F34FF1C057E03000E937C;
+			remoteInfo = AudioKit;
+		};
+		B3A50B9E200DB5F9007FA066 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B3A50B93200DB5EA007FA066 /* AudioKit For iOS.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = EA7D07001F4E63C200707706;
+			remoteInfo = AudioKitUI;
+		};
+		B3A50BA2200DB60C007FA066 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B3A50B93200DB5EA007FA066 /* AudioKit For iOS.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = C42F34FF1C057E03000E937C;
+			remoteInfo = AudioKit;
+		};
+		B3A50BA6200DB60C007FA066 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B3A50B93200DB5EA007FA066 /* AudioKit For iOS.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = EA7D07001F4E63C200707706;
+			remoteInfo = AudioKitUI;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXCopyFilesBuildPhase section */
-		94BB31421F75B12600912D74 /* Embed Frameworks */ = {
+		B3A50BA8200DB60C007FA066 /* Embed Frameworks */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
+				B3A50BA5200DB60C007FA066 /* AudioKitUI.framework in Embed Frameworks */,
+				B3A50BA1200DB60C007FA066 /* AudioKit.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -65,7 +115,6 @@
 
 /* Begin PBXFileReference section */
 		4E3462380C85912B5B47237E /* Pods_RomPlayer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RomPlayer.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		7DFBF0821F234E68AEA91234 /* Pods-RomPlayer.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RomPlayer.release.xcconfig"; path = "Pods/Target Support Files/Pods-RomPlayer/Pods-RomPlayer.release.xcconfig"; sourceTree = "<group>"; };
 		940FC29C1FDCD5CB00131899 /* PingPongDelay.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PingPongDelay.swift; sourceTree = "<group>"; };
 		9430178E1F23DE4600A302B2 /* Double+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Double+Extensions.swift"; sourceTree = "<group>"; };
 		9431F63B1F82CF11000A1718 /* PresetCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = PresetCell.swift; path = Cells/PresetCell.swift; sourceTree = "<group>"; };
@@ -109,7 +158,7 @@
 		94C6CC2C1F840CFD0043BA5E /* ViewController+DisplayAlert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ViewController+DisplayAlert.swift"; sourceTree = "<group>"; };
 		94C6CC2E1F840FD20043BA5E /* TopUIButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = TopUIButton.swift; path = RomPlayer/Controls/Buttons/TopUIButton.swift; sourceTree = "<group>"; };
 		94DC03581F9D634B006AFBDE /* PopUpMIDIController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PopUpMIDIController.swift; sourceTree = "<group>"; };
-		A02A63B97D483D2D523E0DAE /* Pods-RomPlayer.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RomPlayer.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RomPlayer/Pods-RomPlayer.debug.xcconfig"; sourceTree = "<group>"; };
+		B3A50B93200DB5EA007FA066 /* AudioKit For iOS.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = "AudioKit For iOS.xcodeproj"; path = "Libraries/AudioKit/AudioKit/iOS/AudioKit For iOS.xcodeproj"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -117,7 +166,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				14114AAB0957DB2FF3F0BAE6 /* Pods_RomPlayer.framework in Frameworks */,
+				B3A50BA4200DB60C007FA066 /* AudioKitUI.framework in Frameworks */,
+				B3A50BA0200DB60C007FA066 /* AudioKit.framework in Frameworks */,
 				94780FF51F9B05E5006D3710 /* AudioToolbox.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -125,15 +175,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		4E00E77D430611A978E80C8D /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				A02A63B97D483D2D523E0DAE /* Pods-RomPlayer.debug.xcconfig */,
-				7DFBF0821F234E68AEA91234 /* Pods-RomPlayer.release.xcconfig */,
-			);
-			name = Pods;
-			sourceTree = "<group>";
-		};
 		941373651F7F239500A0B7C6 /* Cells */ = {
 			isa = PBXGroup;
 			children = (
@@ -182,10 +223,10 @@
 		944156C91F2121CC00C139B9 = {
 			isa = PBXGroup;
 			children = (
+				B3A50B93200DB5EA007FA066 /* AudioKit For iOS.xcodeproj */,
 				944156D41F2121CC00C139B9 /* RomPlayer */,
 				944156D31F2121CC00C139B9 /* Products */,
 				E637669B376BFBAC1CF46E9C /* Frameworks */,
-				4E00E77D430611A978E80C8D /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -281,6 +322,15 @@
 			name = Buttons;
 			sourceTree = "<group>";
 		};
+		B3A50B94200DB5EA007FA066 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B3A50B99200DB5EA007FA066 /* AudioKit.framework */,
+				B3A50B9B200DB5EA007FA066 /* AudioKitUI.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 		E637669B376BFBAC1CF46E9C /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -297,17 +347,18 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 944156E41F2121CC00C139B9 /* Build configuration list for PBXNativeTarget "RomPlayer" */;
 			buildPhases = (
-				D9EC0E44570134D7DA6141BA /* [CP] Check Pods Manifest.lock */,
 				944156CE1F2121CC00C139B9 /* Sources */,
 				944156CF1F2121CC00C139B9 /* Frameworks */,
 				944156D01F2121CC00C139B9 /* Resources */,
-				2D1C6BD3FB1DA0A95DC1C59D /* [CP] Embed Pods Frameworks */,
-				D6A5F8A5F3CC01CF2E26C5B4 /* [CP] Copy Pods Resources */,
-				94BB31421F75B12600912D74 /* Embed Frameworks */,
+				B3A50BA8200DB60C007FA066 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				B3A50B9D200DB5F9007FA066 /* PBXTargetDependency */,
+				B3A50B9F200DB5F9007FA066 /* PBXTargetDependency */,
+				B3A50BA3200DB60C007FA066 /* PBXTargetDependency */,
+				B3A50BA7200DB60C007FA066 /* PBXTargetDependency */,
 			);
 			name = RomPlayer;
 			productName = SynthUISpike;
@@ -351,12 +402,35 @@
 			mainGroup = 944156C91F2121CC00C139B9;
 			productRefGroup = 944156D31F2121CC00C139B9 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = B3A50B94200DB5EA007FA066 /* Products */;
+					ProjectRef = B3A50B93200DB5EA007FA066 /* AudioKit For iOS.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				944156D11F2121CC00C139B9 /* RomPlayer */,
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		B3A50B99200DB5EA007FA066 /* AudioKit.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = AudioKit.framework;
+			remoteRef = B3A50B98200DB5EA007FA066 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		B3A50B9B200DB5EA007FA066 /* AudioKitUI.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = AudioKitUI.framework;
+			remoteRef = B3A50B9A200DB5EA007FA066 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		944156D01F2121CC00C139B9 /* Resources */ = {
@@ -370,62 +444,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
-
-/* Begin PBXShellScriptBuildPhase section */
-		2D1C6BD3FB1DA0A95DC1C59D /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-RomPlayer/Pods-RomPlayer-frameworks.sh",
-				"${PODS_ROOT}/AudioKit/iOS/AudioKit.framework",
-				"${PODS_ROOT}/AudioKit/iOS/AudioKitUI.framework",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AudioKit.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AudioKitUI.framework",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RomPlayer/Pods-RomPlayer-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		D6A5F8A5F3CC01CF2E26C5B4 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RomPlayer/Pods-RomPlayer-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		D9EC0E44570134D7DA6141BA /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-RomPlayer-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		944156CE1F2121CC00C139B9 /* Sources */ = {
@@ -472,6 +490,29 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		B3A50B9D200DB5F9007FA066 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = AudioKit;
+			targetProxy = B3A50B9C200DB5F9007FA066 /* PBXContainerItemProxy */;
+		};
+		B3A50B9F200DB5F9007FA066 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = AudioKitUI;
+			targetProxy = B3A50B9E200DB5F9007FA066 /* PBXContainerItemProxy */;
+		};
+		B3A50BA3200DB60C007FA066 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = AudioKit;
+			targetProxy = B3A50BA2200DB60C007FA066 /* PBXContainerItemProxy */;
+		};
+		B3A50BA7200DB60C007FA066 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = AudioKitUI;
+			targetProxy = B3A50BA6200DB60C007FA066 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		944156D91F2121CC00C139B9 /* Main.storyboard */ = {
@@ -594,7 +635,6 @@
 		};
 		944156E51F2121CC00C139B9 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = A02A63B97D483D2D523E0DAE /* Pods-RomPlayer.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -618,7 +658,6 @@
 		};
 		944156E61F2121CC00C139B9 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 7DFBF0821F234E68AEA91234 /* Pods-RomPlayer.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
